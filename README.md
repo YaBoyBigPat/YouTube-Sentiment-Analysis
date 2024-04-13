@@ -8,3 +8,6 @@ I then used the LDA model to find related topic words in the comments of each vi
 Finally, I created 16 video categories for each of the 100 videos so there would be more order in my Tableau dashboard analysis.
 
 Below is a link to the dashboards and a few of the insights, feel free to comment and let me know what you believe I can improve 🫡. https://public.tableau.com/views/YouTubeSentimentAnalysis/Overview?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link
+Link to the Kurzgesagt Youtube Channel: https://www.youtube.com/@kurzgesagt
+
+If you'd like to clone this and reupload it, just throw a shout-out or an @ for me in there, it'd be cool to see what you do with it. 
