@@ -22,7 +22,7 @@ This project involves the analysis of comments from 196 videos on the Kurzgesagt
 # Conclusion 🫡
 - This project serves as a detailed exploration of the Kurzgesagt YouTube community, employing robust sentiment and topic modeling techniques. The resulting Tableau dashboards offer valuable insights into audience sentiments and discussions. 
 
-# Links:
+# Links: 🔗
 Below is a link to the dashboards and a few of the insights, feel free to comment and let me know what you believe I can improve 🫡. https://public.tableau.com/views/YouTubeSentimentAnalysis/Overview?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link
 
 Link to the Kurzgesagt Youtube Channel: https://www.youtube.com/@kurzgesagt
