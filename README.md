@@ -1,13 +1,22 @@
-# YouTube Sentiment Analysis
-Hey 👋, this project is my first big solo project that analyzes YouTube comments from 196 videos of the channel Kurzgesagt. The purpose is the creation of insightful tableau dashboards that add another layer of granular understanding to the channel's YouTube comments and community. The comments were pulled (around 19,650) using YouTube's API and then cleaned for any stray charters and symbols that would reduce the quality of the RoBerta and LDA analysis. For the RoBerta analysis, I used the "cardiffnlp/twitter-roberta-base-sentiment-latest" since the model training was focused on 124 million tweets and was the closest text format I could find to YouTube comments. One immediate limitation I found after running the model was it's accuracy in predicting negative labels which only accounted for 12.2% of the sentiment (28.1% neutral and 59.7% positive). Before this, I used a different cardiffnlp/twitter-roberta sentiment model that gave me around 9% negative comments.
+#YouTube Comments Analysis for Kurzgesagt 🦆
+Welcome to this YouTube comments analysis project for the Kurzgesagt channel. This project aims to deliver insightful Tableau dashboards that provide a detailed understanding of the channel's comments and community.
 
-I wanted a second opinion and checked with a professor who's more knowledgeable in this area. He told me that he's suspicious of the low negative percentage and that the model may not be trying to fit the data in the negative sentiment category because of how it's been trained. So one of my future improvements for this project is to fine-tune this model on the YouTube comments I've collected. I've already been attempting this and you can find the model fine-tuning near the bottom of the "Comment Sentiment Analysis" notebook. Next, I wanted to create 3 key topics and themes found in the comments text using the LDA model. The first topic is highly related to the video content, the second has to do with the general conversation in the comments, and the third is a hidden or subtopic related to the video content.
+#Project Overview
+This project involves the analysis of comments from 196 videos on the Kurzgesagt channel. Approximately 19,650 comments were retrieved using YouTube's API, subsequently cleaned for extraneous characters and symbols, and analyzed using two main methodologies:
 
-I then used the LDA model to find related topic words in the comments of each video. I used the coherience model to find the optimal number of relevant topics which was around 10-34 and since I'm the only one analyzing these I went with 10 distributed topics and 12 topic words. I created the 3 topics for 100 Kurzgesagt videos by using at least 5 topic words to create the topic. I also used the word cloud to assist in finding relevant topics and topic words since it shows the frequency of repeated words by increasing the size of the words that appear the most. When picking the topic words at least 3/5 words came from the LDA model and the other 2/5 words came from the word cloud and my observation of the comments text. Topic words that mostly came from the word cloud and my observation of the text came when creating the third topic (the sub or hidden topic) most of the time and not as much for the first and second topics.
+#Sentiment Analysis:
+Utilized the cardiffnlp/twitter-roberta-base-sentiment-latest model, trained on 124 million tweets, to gauge sentiment.
+Initial results showed 12.2% negative, 28.1% neutral, and 59.7% positive sentiment.
+Feedback from an academic expert suggested a potential limitation in accurately predicting negative sentiments. As a future improvement, the model may be fine-tuned using collected YouTube comments. Preliminary fine-tuning efforts can be found in the "Comment Sentiment Analysis" notebook.
+#Topic Modeling:
+Employed the LDA model to identify key topics and themes across the comments.
+Topics were categorized into three groups: video content-related, general conversation, and hidden/subtopics.
+The optimal number of topics was determined to be between 10-34, with the final choice being 10 distributed topics, each having 12 topic words.
+A word cloud visualization assisted in selecting relevant topics and words, particularly for the hidden/subtopics.
+To structure the analysis, 16 video categories were created for 100 videos, enhancing the Tableau dashboard organization.
 
-Finally, I created 16 video categories for each of the 100 videos so there would be more order in my Tableau dashboard analysis.
-
-Below is a link to the dashboards and a few of the insights, feel free to comment and let me know what you believe I can improve 🫡. https://public.tableau.com/views/YouTubeSentimentAnalysis/Overview?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link
-Link to the Kurzgesagt Youtube Channel: https://www.youtube.com/@kurzgesagt
-
-If you'd like to clone this and reupload it, just throw a shout-out or an @ for me in there, it'd be cool to see what you do with it. 
+#Future Improvements
+Fine-Tuning: Further fine-tuning of the sentiment model on YouTube comments.
+Topic Refinement: Continuously improving the selection of topic words using LDA and word cloud analysis.
+#Conclusion
+This project serves as a detailed exploration of the Kurzgesagt YouTube community, employing robust sentiment and topic modeling techniques. The resulting Tableau dashboards offer valuable insights into audience sentiments and discussions. 
