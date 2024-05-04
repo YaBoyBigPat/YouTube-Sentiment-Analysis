@@ -20,3 +20,10 @@ This project involves the analysis of comments from 196 videos on the Kurzgesagt
 - Topic Refinement: Continuously improving the selection of topic words using LDA and word cloud analysis.
 # Conclusion 🫡
 - This project serves as a detailed exploration of the Kurzgesagt YouTube community, employing robust sentiment and topic modeling techniques. The resulting Tableau dashboards offer valuable insights into audience sentiments and discussions. 
+
+# Links:
+Below is a link to the dashboards and a few of the insights, feel free to comment and let me know what you believe I can improve 🫡. https://public.tableau.com/views/YouTubeSentimentAnalysis/Overview?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link
+
+Link to the Kurzgesagt Youtube Channel: https://www.youtube.com/@kurzgesagt
+
+If you'd like to clone this and reupload it, just throw a shout-out or an @ for me in there, it'd be cool to see what you do with it.
