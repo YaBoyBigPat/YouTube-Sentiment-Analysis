@@ -2,7 +2,7 @@
 Welcome to this YouTube comments analysis project for the Kurzgesagt channel. This project aims to deliver multiple insightful and actionable Tableau dashboards that provide a detailed understanding of the channel's comments and community.
 
 # Project Overview 🛰️
-This project involves the analysis of comments from 196 videos on the Kurzgesagt channel. Approximately 19,650 comments were retrieved using YouTube's API, then cleaned for extraneous characters and symbols. Other channel statistics were pulled using the API like 
+This project involves the analysis of comments from 196 videos on the Kurzgesagt channel. Approximately 19,650 comments were retrieved using YouTube's API, then cleaned for extraneous characters and symbols. Other channel statistics were pulled using the API like upload day, video duration, like count, comment count, tag count, and more.
 
 # Sentiment Analysis: 🚀
 - Utilized the cardiffnlp/twitter-roberta-base-sentiment-latest model, trained on 124 million tweets, to gauge sentiment.
